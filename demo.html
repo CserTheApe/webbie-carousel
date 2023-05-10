@@ -20,115 +20,115 @@
     </p>
     <hr />
     <div class="block">
-      <cwc-carousel> </cwc-carousel>
-      <cwc-snippet>
-        <cwc-carousel> --- HTML content goes here --- </cwc-carousel>
-      </cwc-snippet>
+      <webbie-carousel> </webbie-carousel>
+      <webbie-snippet>
+        <webbie-carousel> --- HTML content goes here --- </webbie-carousel>
+      </webbie-snippet>
     </div>
     <hr />
     <div class="block">
-      <cwc-carousel title="Carousel Title"> </cwc-carousel>
-      <cwc-snippet>
-        <cwc-carousel title="Carousel Title"> </cwc-carousel>
-      </cwc-snippet>
+      <webbie-carousel title="Carousel Title"> </webbie-carousel>
+      <webbie-snippet>
+        <webbie-carousel title="Carousel Title"> </webbie-carousel>
+      </webbie-snippet>
     </div>
     <hr />
     <div class="block">
-      <cwc-carousel
+      <webbie-carousel
         title="Styled Carousel Title"
         title-style="font-style: italic; font-family: arial"
       >
-      </cwc-carousel>
-      <cwc-snippet>
-        <cwc-carousel
+      </webbie-carousel>
+      <webbie-snippet>
+        <webbie-carousel
           title="Styled Carousel Title"
           title-style="font-style: italic; font-family: arial"
         >
-        </cwc-carousel>
-      </cwc-snippet>
+        </webbie-carousel>
+      </webbie-snippet>
     </div>
     <hr />
     <div class="block">
-      <cwc-carousel
+      <webbie-carousel
         title="Carousel with subtext"
         subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       >
-      </cwc-carousel>
-      <cwc-snippet>
-        <cwc-carousel
+      </webbie-carousel>
+      <webbie-snippet>
+        <webbie-carousel
           title="Carousel with subtext"
           subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
         >
-        </cwc-carousel>
-      </cwc-snippet>
+        </webbie-carousel>
+      </webbie-snippet>
     </div>
     <hr />
     <div class="block">
-      <cwc-carousel
+      <webbie-carousel
         title="Carousel with styled subtext"
         subtext="I like food 'cause it is yummy. I will put it in my tummy."
         subtext-style="font-style: italic; font-weight: bold; color: purple"
       >
-      </cwc-carousel>
-      <cwc-snippet>
-        <cwc-carousel
+      </webbie-carousel>
+      <webbie-snippet>
+        <webbie-carousel
           title="Carousel with styled subtext"
           subtext="I like food 'cause it is yummy. I will put it in my tummy."
           subtext-style="font-style: italic; font-weight: bold; color: purple"
         >
-        </cwc-carousel>
-      </cwc-snippet>
+        </webbie-carousel>
+      </webbie-snippet>
     </div>
     <hr />
     <div class="block">
-      <cwc-carousel
+      <webbie-carousel
         title="Styled container"
         container-style="background-color: #ffffdd; border: 5px solid #ffeeaa; font-family: helvetica"
       >
-      </cwc-carousel>
-      <cwc-snippet>
-        <cwc-carousel
+      </webbie-carousel>
+      <webbie-snippet>
+        <webbie-carousel
           title="Styled container"
           container-style="background-color: #ffffdd; border: 5px solid #ffeeaa; font-family: helvetica"
         >
-        </cwc-carousel>
-      </cwc-snippet>
+        </webbie-carousel>
+      </webbie-snippet>
     </div>
     <hr />
     <div class="block">
-      <cwc-carousel
+      <webbie-carousel
         title="Custom button colors and content gap"
         arrow-color="#11aa33"
         button-color="#66ddbb"
         gap="4em"
       >
-      </cwc-carousel>
-      <cwc-snippet>
-        <cwc-carousel
+      </webbie-carousel>
+      <webbie-snippet>
+        <webbie-carousel
           title="Custom button colors and content gap"
           arrow-color="#11aa33"
           button-color="#66ddbb"
           gap="4em"
         >
-        </cwc-carousel>
-      </cwc-snippet>
+        </webbie-carousel>
+      </webbie-snippet>
     </div>
     <hr />
     <div class="block">
-      <cwc-carousel
+      <webbie-carousel
         title="Custom button width and arrow size"
         button-width="100px"
         arrow-size="50px"
       >
-      </cwc-carousel>
-      <cwc-snippet>
-        <cwc-carousel
+      </webbie-carousel>
+      <webbie-snippet>
+        <webbie-carousel
           title="Custom button width and arrow size"
           button-width="100px"
           arrow-size="50px"
         >
-        </cwc-carousel>
-      </cwc-snippet>
+        </webbie-carousel>
+      </webbie-snippet>
     </div>
 
     <script>
@@ -146,17 +146,17 @@
           htmlString += item(i);
         }
 
-        const elems = document.getElementsByTagName("cwc-carousel");
+        const elems = document.getElementsByTagName("webbie-carousel");
         for (let elem of elems) {
           elem.innerHTML = htmlString;
         }
       }
     </script>
 
-    <script type="module" src="dist/main.js"></script>
+    <script type="module" src="dist/webbie-carousel.js"></script>
     <script
       type="module"
-      src="node_modules/webbie-snippet/dist/main.js"
+      src="node_modules/webbie-snippet/dist/webbie-snippet.js"
     ></script>
   </body>
 </html>

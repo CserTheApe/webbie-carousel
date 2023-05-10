@@ -1,6 +1,6 @@
 import Template from "./template.js";
 
-export default class CwcCarousel extends HTMLElement {
+export default class WebbieCarousel extends HTMLElement {
   constructor() {
     super();
 
@@ -88,6 +88,6 @@ export default class CwcCarousel extends HTMLElement {
   }
 }
 
-if (!customElements.get("cwc-carousel")) {
-  customElements.define("cwc-carousel", CwcCarousel);
+if (!customElements.get("webbie-carousel")) {
+  customElements.define("webbie-carousel", WebbieCarousel);
 }

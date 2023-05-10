@@ -12,12 +12,12 @@ Install with npm: `npm install webbie-carousel`
 
 ## Usage
 
-Add script to page with `<script type="module" src="path/to/dist/main.js"></script>`
+Add script to page with `<script type="module" src="path/to/dist/webbie-carousel.js"></script>`
 
 ```html
-<cwc-carousel>
+<webbie-carousel>
     --- Array of Content ---
-</cwc-carousel>
+</webbie-carousel>
 ```
 
 ---
