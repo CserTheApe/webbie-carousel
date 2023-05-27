@@ -1,6 +1,6 @@
 {
   "name": "webbie-carousel",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A web component based horizontal scrolling carousel",
   "main": "dist/webbie-carousel.js",
   "scripts": {

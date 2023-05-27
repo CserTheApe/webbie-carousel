@@ -115,7 +115,7 @@
     </div>
     <hr />
     <div class="block">
-      <webbie-carousel
+      <webbie-carousel id="whatter"
         title="Custom button width and arrow size"
         button-width="100px"
         arrow-size="50px"
@@ -129,6 +129,8 @@
         >
         </webbie-carousel>
       </webbie-snippet>
+      <button onclick="whatted()">Change title text</button>
+      <p>Button triggers a function to change the title attribute of the last carousel.</p>
     </div>
 
     <script>
@@ -150,6 +152,11 @@
         for (let elem of elems) {
           elem.innerHTML = htmlString;
         }
+      }
+      
+      function whatted() {
+        const elems = document.getElementById("whatter");
+        elems.setAttribute("title", "Title text changed");
       }
     </script>
 

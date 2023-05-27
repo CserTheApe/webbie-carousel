@@ -4,6 +4,30 @@ export default class WebbieCarousel extends HTMLElement {
   constructor() {
     super();
 
+    this.attachShadow({ mode: "open" });
+    this.render();
+  }
+
+  static get observedAttributes() {
+    return [
+      "gap",
+      "title",
+      "title-style",
+      "subtext",
+      "subtext-style",
+      "container-style",
+      "arrow-color",
+      "button-color",
+      "button-width",
+      "arrow-size",
+    ];
+  }
+
+  attributeChangedCallback(_name, _oldValue, _newValue) {
+    this.render();
+  }
+
+  render() {
     const gap = this.getAttribute("gap");
     const title = this.getAttribute("title");
     const titleStyle = this.getAttribute("title-style");
@@ -14,8 +38,6 @@ export default class WebbieCarousel extends HTMLElement {
     const buttonColor = this.getAttribute("button-color");
     const buttonWidth = this.getAttribute("button-width");
     const arrowSize = this.getAttribute("arrow-size");
-
-    this.attachShadow({ mode: "open" });
 
     this.shadowRoot.innerHTML = Template.render({
       html: {
