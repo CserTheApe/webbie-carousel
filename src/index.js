@@ -20,6 +20,9 @@ export default class WebbieCarousel extends HTMLElement {
       "button-color",
       "button-width",
       "arrow-size",
+      "button-opacity",
+      "hover-opacity",
+      "click-opacity",
     ];
   }
 
@@ -38,6 +41,9 @@ export default class WebbieCarousel extends HTMLElement {
     const buttonColor = this.getAttribute("button-color");
     const buttonWidth = this.getAttribute("button-width");
     const arrowSize = this.getAttribute("arrow-size");
+    const buttonOpacity = Number(this.getAttribute("button-opacity"));
+    const hoverOpacity = Number(this.getAttribute("hover-opacity"));
+    const clickOpacity = Number(this.getAttribute("click-opacity"));
 
     this.shadowRoot.innerHTML = Template.render({
       html: {
@@ -53,6 +59,9 @@ export default class WebbieCarousel extends HTMLElement {
         buttonColor,
         buttonWidth,
         arrowSize,
+        buttonOpacity: buttonOpacity ? this.numerify(buttonOpacity, 1) : 0.5,
+        hoverOpacity: hoverOpacity ? this.numerify(hoverOpacity, 1) : 0.8,
+        clickOpacity: clickOpacity ? this.numerify(clickOpacity, 1) : 1,
       },
     });
 
@@ -107,6 +116,10 @@ export default class WebbieCarousel extends HTMLElement {
     } else {
       this.buttonRight.disabled = false;
     }
+  }
+
+  numerify(value, max) {
+    return Math.max(Math.min(value, max), 0);
   }
 }
 

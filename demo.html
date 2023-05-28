@@ -97,17 +97,23 @@
     <hr />
     <div class="block">
       <webbie-carousel
-        text="Custom button colors and content gap"
+        text="Custom button colors, opacity and content gap"
         arrow-color="#11aa33"
         button-color="#66ddbb"
+        button-opacity="0.8"
+        hover-opacity="0.6"
+        click-opacity="0.2"
         gap="4em"
       >
       </webbie-carousel>
       <webbie-snippet>
         <webbie-carousel
-          text="Custom button colors and content gap"
+          text="Custom button colors, opacity and content gap"
           arrow-color="#11aa33"
           button-color="#66ddbb"
+          button-opacity="0.8"
+          hover-opacity="0.6"
+          click-opacity="0.2"
           gap="4em"
         >
         </webbie-carousel>
@@ -156,7 +162,7 @@
       
       function whatted() {
         const elems = document.getElementById("whatter");
-        elems.setAttribute("title", "Title text changed");
+        elems.setAttribute("text", "Title text changed");
       }
     </script>
 

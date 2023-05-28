@@ -72,7 +72,7 @@ export default {
 
         .slider {
             position: absolute;
-            width: ${prop.buttonWidth ? prop.buttonWidth : "40px"};
+            width: ${prop.buttonWidth ? prop.buttonWidth : "50px"};
             height: auto;
             top: 0;
             bottom: 0;
@@ -81,24 +81,24 @@ export default {
             padding: 0;
             background: none;
             cursor: pointer;
+            opacity: ${prop.buttonOpacity};
             background-color: ${
               prop.buttonColor ? prop.buttonColor : "#cccccc"
             };
-            opacity: 0.4;
         }
         .slider:hover {
-            opacity: 0.8;
+            opacity: ${prop.hoverOpacity};
         }
         .slider:active {
-            opacity: 1;
+            opacity: ${prop.clickOpacity};
         }
         .slider:disabled {
             display: none;
         }
         .slider svg {
             stroke: ${prop.arrowColor ? prop.arrowColor : "#555555"};
-            width: ${prop.arrowSize ? prop.arrowSize : "40px"};
-            height: ${prop.arrowSize ? prop.arrowSize : "40px"};
+            width: ${prop.arrowSize ? prop.arrowSize : "50px"};
+            height: ${prop.arrowSize ? prop.arrowSize : "50px"};
         }
 
         #slidenext {

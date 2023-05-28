@@ -38,6 +38,9 @@ All props are optional. The carousel height is set by the height of its content.
 | button-width | custom width for the buttons (default: 40px) |
 | arrow-color | custom color for the slider button arrows (default: #555555) |
 | arrow-size | custom size for the arrows (default: 40px) |
+| button-opacity | default opacity for buttons (default: 0.5) |
+| hover-opacity | button opacity on hover (default: 0.8) |
+| click-opacity | button opacity on click (default: 1) |
 
 ---
 
