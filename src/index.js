@@ -11,8 +11,8 @@ export default class WebbieCarousel extends HTMLElement {
   static get observedAttributes() {
     return [
       "gap",
-      "title",
-      "title-style",
+      "text",
+      "text-style",
       "subtext",
       "subtext-style",
       "container-style",
@@ -29,8 +29,8 @@ export default class WebbieCarousel extends HTMLElement {
 
   render() {
     const gap = this.getAttribute("gap");
-    const title = this.getAttribute("title");
-    const titleStyle = this.getAttribute("title-style");
+    const title = this.getAttribute("text");
+    const titleStyle = this.getAttribute("text-style");
     const subText = this.getAttribute("subtext");
     const subTextStyle = this.getAttribute("subtext-style");
     const rootStyle = this.getAttribute("container-style");

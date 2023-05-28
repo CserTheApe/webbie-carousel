@@ -28,9 +28,9 @@ All props are optional. The carousel height is set by the height of its content.
 
 | Name | Description |
 | ---- | ----------- |
-| title | add a title to the carousel |
+| text | add a title to the carousel |
 | subtext | additional text underneath the title |
-| title-style | custom css for the title |
+| text-style | custom css for the title |
 | subtext-style | css for the subtext |
 | container-style | css for the carousel container |
 | gap | customize gap between content (default: 10px) |
