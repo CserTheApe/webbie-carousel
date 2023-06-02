@@ -74,6 +74,7 @@ export default {
             position: absolute;
             width: ${prop.buttonWidth ? prop.buttonWidth : "50px"};
             height: auto;
+            z-index: 10;
             top: 0;
             bottom: 0;
             margin: auto 0;
